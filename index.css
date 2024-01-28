@@ -1,0 +1,379 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    order: 1;
+}
+
+
+.head_container {
+    max-width: 90%;
+    margin: auto;
+}
+
+header {
+  background-color: lightblue;
+  color: black;
+  padding: 15px;
+  text-align: right;
+}
+
+.logo img {
+    width: 250px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li {
+    margin-left: 3rem;
+}
+
+header ul li a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+    transition: 0.5s;
+}
+
+header ul li a:hover {
+    color: #C1B086;
+}
+
+#navigation-menu    {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header ul {
+        display: block;
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.5s;
+        box-shadow: 0 10px 27px #000;
+        z-index: 20;
+    }
+
+
+    header ul.active {
+        left: 0%;
+    }
+
+    header ul li {
+        margin: 2.5rem 0;
+    }
+
+    header ul li a {
+        color: black;
+    }
+
+    
+
+}
+
+.location-ask   {
+    margin: 130px 3%;
+}
+
+
+.where-to   {
+    font-weight: bold;
+}
+
+.required   {
+    font-weight: lighter;
+}
+
+.location   {
+    width: 840.53px;
+    height: 43.2px;
+
+}
+
+
+input{
+    height: 30px;
+    border-color: #E6E6E6;
+}
+
+.booking{
+    display: inline-block;
+}
+
+
+.btn find-places {
+    color: white;
+    background-color: black;
+}
+
+.btn{
+  backface-visibility: hidden;
+  background-color: black;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 90%;
+  height: 44px;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 10px;
+  width: 19vh;
+
+}
+
+.find-places {
+    background-color: #000;
+    color: #fff
+}
+
+  .collage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 100%;
+  }
+
+  .collage-container {
+    padding-top: 50px;
+  }
+
+  .welcome-text h2 {
+    padding-top: 30px;
+    text-align: center;
+    font-size:xx-large;
+
+  }
+
+  .welcome-text p {
+    color: #333;
+    padding-top: 10px;
+    text-align: center;
+    font-size: large;
+  }
+
+  .welcome-text button {
+    color: #fff;
+    background-color: #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+.subheading {
+    padding-top: 100px
+}
+
+.subheading h2 {
+    padding-top: 30px;
+    font-size:xx-large;
+    text-align: center;
+  }
+
+  .subheading p {
+    color: #333;
+    padding-top: 10px;
+    font-size: large;
+    text-align: center;
+  }
+
+
+section.tour-packages {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.package {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.package img {
+  max-width: 100%;
+  height: auto;
+}
+
+.package h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.package p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+.package button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.package button:hover {
+  background-color: #555;
+}
+
+section.more-places {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  cursor: pointer;
+}
+
+.place {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.place img {
+  max-width: 100%;
+  height: auto;
+}
+
+.package h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+  .special-pack img{
+    width: 1200px ;
+    height: 500px;
+  }
+
+  .special-pack div{
+    padding-left: 0%;
+  }
+
+.special-pack h2 {
+    font-size: 36px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .special-pack p {
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
+  }
+
+  .special-pack button {
+    background-color: #000;
+    color: #fff;;
+  
+  }
+
+  footer {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+.col-1 button {
+    border: 0;
+    background-color: #104C97;
+    color: #fff;
+    width: 162px;
+}
+
+
+
+  .footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+
+  }
+
+  .social-icons {
+    margin-top: 30px;
+  }
+
+  .social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1208px) {
+    .destinations-images img{
+      width: 404.59px;
+      height: 539.45px;
+    }
+
+    .experience-images img {
+      width: 404.59px;
+      height: 269.72;
+    }
+
+    .different-hotels {
+      display: block;
+
+    }
+
+    .different-hotels img{
+      width: 100%;
+      height: auto;
+
+    }
+  }
+  footer {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+  }
